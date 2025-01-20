@@ -122,7 +122,7 @@ func printSomething(value interface{}) {
 	// we can also check for the type like this and get the typed value and boolean
 	// with information if it is of given type
 	typedVal, ok := value.(int)
-	// typedVal will be of type any so we would have to cast it into expected type
+	// typedVal will be of type int so we would have to cast it into expected type
 	// before using later on
 	fmt.Println(typedVal, ok)
 }

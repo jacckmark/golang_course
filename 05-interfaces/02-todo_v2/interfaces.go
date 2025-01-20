@@ -79,7 +79,8 @@ func getNoteData() (string, string) {
 // here writing an function with interface which makes it possible for us to
 // provide different structs for this method (here todo and note). These structs
 // can be anything the only real requirement in golang is that they do implement
-// specified method (both todo and note have method save that returns an error)
+// specified method (both todo and note have method save that returns an error,
+// that's why it works)
 func saveData(data saver) error {
 	err := data.Save()
 
